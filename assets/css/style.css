@@ -1,0 +1,39 @@
+body {
+  font-family: 'Arimo', sans-serif;
+}
+
+header {
+  background-image: url('../images/header_bg.jpg');
+  height: 100vh;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.brand {
+  height: 45px;
+  width: 167px;
+  vertical-align: middle;
+}
+
+.header__title {
+  font-size: 3em;
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+.header__subtitle {
+  margin-left: 1rem;
+}
+
+section {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 1.8vw;
+}
+
+button.btn.btn-danger.sing-up {
+  margin-left: 1rem;
+  font-size: 14px;
+  letter-spacing: 1.9px;
+  font-weight: 300;
+}
