@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
@@ -20,12 +21,12 @@
         <!-- Image and text -->
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <nav class="navbar navbar-light ">
+                <div class="col-md-12 mt-5">
+                    <nav class="navbar navbar-light">
                         <a class="navbar-brand" href="#">
-                            <img class="brand" src="./assets/images/logo.svg" class="d-inline-block align-top" alt="">
+                            <img class="brand"  src="./assets/images/logo.svg" class="d-inline-block align-top" alt="">
                         </a>
-                        <a class="signin text-white btn btn-danger" href="https://www.netflix.com/login">
+                        <a class="signin text-white btn btn-lg btn-danger" href="https://www.netflix.com/login">
                             Sign In
                         </a>
                     </nav>
@@ -39,29 +40,204 @@
 
         </div>
     </header>
-    <div class="container-fluid tab-nav">
-        <div class="row bg-dark text-center py-5">
-            <div class="col">
-                <a class="tab is-selected" href="#" data-id="cancelanytime">
-                    <img class="mx-auto d-block" src="./assets/images/cancel.svg" alt="cancel image">
-                    <span class="text-full">No commitments
-                        <br>Cancel online at anytime</span>
-                </a>
-            </div>
-            <div class="col">
-                <a class="tab" href="#" data-id="watchanywhere">
-                    <img class="mx-auto d-block" src="./assets/images/watchanywhere.svg" alt="whachanywhere image">
-                    <span class="text-full">Watch anywhere</span>
-                </a>
-            </div>
-            <div class="col">
-                <a class="tab" href="#" data-id="pickprice">
-                    <img class="mx-auto d-block" src="./assets/images/pickprice.svg" alt="">
-                    <span class="text-full">Pick your price</span>
-                </a>
+    <section id="tabs">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+                                aria-selected="true">
+                                <img class="mx-auto d-block" src="./assets/images/cancel.svg" alt="cancel image">
+                                <span class="text-full">No commitments
+                                    <br>Cancel online at anytime</span>
+                            </a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">
+                                <img class="mx-auto d-block" src="./assets/images/watchanywhere.svg" alt="whachanywhere image">
+                                <span class="text-full">Watch anywhere</span>
+                            </a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">
+                                <img class="mx-auto d-block" src="./assets/images/pickprice.svg" alt="">
+                                <span class="text-full">Pick your price</span>
+                            </a>
+                        </div>
+                    </nav>
+                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="container">
+                                <div class="row features">
+                                    <div class="col-md-6">
+                                        <h2>
+                                            If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.
+                                        </h2>
+                                        <button class="btn btn-lg btn-danger">JOIN FOR A FREE MONTH</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="tin-large-image-tag" src="./assets/images/cancelanytime_withdevice.png" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="container">
+                                <div class="row features">
+                                    <div class="col-md-6">
+                                        <h2>
+                                            Watch TV shows and movies anytime, anywhere — personalized for you.
+                                        </h2>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="btn btn-lg btn-danger">JOIN FOR A FREE MONTH</button>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <img src="./assets/images/asset_TV_UI.png" />
+                                        <h3>Watch on your TV</h3>
+                                        <p>Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                                    </div>
+
+                                    <div class="col text-center">
+                                        <img src="./assets/images/asset_mobile_tablet_UI_2.png" />
+                                        <h3>Watch instantly or download for later</h3>
+                                        <p>Available on phone and tablet, wherever you go.</p>
+                                    </div>
+
+                                    <div class="col text-center">
+                                        <img src="./assets/images/asset_website_UI.png" />
+                                        <h3>Use any computer</h3>
+                                        <p>Watch right on Netflix.com.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="container">
+                                <div class="row text-center features">
+                                    <div class="col-md-6">
+                                        <h2>
+                                            Choose one plan and watch everything on Netflix.
+                                        </h2>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="btn btn-lg btn-danger">JOIN FOR A FREE MONTH</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Basic</th>
+                                                    <th>Standard</th>
+                                                    <th>Premium</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Monthly price after free month ends on 6/27/17</td>
+                                                    <td>$7.99</td>
+                                                    <td>$9.99</td>
+                                                    <td>$11.99</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HD available</td>
+                                                    <td>
+                                                        <i class="fa fa-times"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ultra HD available</td>
+                                                    <td>
+                                                        <i class="fa fa-times"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-times"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Screens you can watch on at the same time</td>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                    <td>4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Watch on your laptop, TV, phone and tablet</td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Unlimited movies and TV shows</td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cancel anytime</td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>First month free</td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-check"></i>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -71,6 +247,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+    <script src="./assets/javascript/app.js"></script>
 </body>
 
 </html>
