@@ -149,3 +149,23 @@ tbody tr:nth-child(2n) {
 tbody td:first-child {
   text-align: left;
 }
+
+footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer > p {
+  margin: 0 0 30px;
+}
+footer ul {
+  list-style: none;
+  margin: 0 0 16px;
+  padding-right: 12px;
+  min-width: 100px;
+  font-size: 13px;
+}
